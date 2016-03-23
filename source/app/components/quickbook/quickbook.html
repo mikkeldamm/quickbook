@@ -1,10 +1,14 @@
 <h3>Quickbook</h3>
 
-<singleOrMultiLeg></singleOrMultiLeg>
+<singleOrMultiLeg (onChange)="onLegTypeChange($event)"></singleOrMultiLeg>
 <outwardRoute [routes]="outwardRoutes" (onSelected)="onOutwardRouteSelect($event)"></outwardRoute>
-<returnRoute></returnRoute>
-<departureDate></departureDate>
-<returnDate></returnDate>
-<passengers></passengers>
-<vehicles></vehicles>
-<offerCode></offerCode>
+<returnRoute [routes]="returnRoutes" (onSelected)="onReturnRouteSelect($event)"></returnRoute>
+<departureDate (onSelected)="onDepartureDateSelect($event)"></departureDate>
+<returnDate (onSelected)="onReturnDateSelect($event)"></returnDate>
+<passengers [passengers]="passengers"
+    (onAdultSelected)="onAdultSelect($event)"
+    (onChildSelected)="onChildSelect($event)"
+    (onInfantSelected)="onInfantSelect($event)"
+    (onPetSelected)="onPetSelect($event)"></passengers>
+<vehicles [vehicles]="vehicles" (onSelected)="onVehicleSelect($event)"></vehicles>
+<offerCode (onChange)="onOfferCodeChange($event)"></offerCode>

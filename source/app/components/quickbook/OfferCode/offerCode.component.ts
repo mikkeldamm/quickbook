@@ -1,7 +1,15 @@
-import {Component} from 'angular2/core';
+import {Component, Output, EventEmitter} from 'angular2/core';
 
-@Component ({
-   selector: 'offerCode',
-   template: require('./offer-code.html')
+@Component({
+    selector: 'offerCode',
+    template: require('./offerCode.html')
 })
-export class OfferCodeComponent{ }
+export class OfferCodeComponent {
+    
+    @Output() onChange = new EventEmitter<string>();
+    
+    onOfferCodeChange(code) {
+        
+        this.onChange.emit(code);
+    }
+}

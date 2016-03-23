@@ -1,21 +1,24 @@
 <div>
     <label>Adults</label>
-    <select>
-        <option>Repeat me</option>
+    <select (change)="onAdultSelect($event.target.value)">
+        <option *ngFor="#index of getItemsByCount(passengers.adults)" [value]="index">{{index}}</option>
     </select>
-
-    <label>Child(4-15)</label>
-    <select>
-        <option>Repeat me</option>
+</div>
+<div>
+    <label>Child (4-15)</label>
+    <select (change)="onChildSelect($event.target.value)">
+        <option *ngFor="#index of getItemsByCount(passengers.children)" [value]="index">{{index}}</option>
     </select>
-
-    <label>Infant(0-3)</label>
-    <select>
-        <option>Repeat me</option>
+</div>
+<div>
+    <label>Infant (0-3)</label>
+    <select (change)="onInfantSelect($event.target.value)">
+        <option *ngFor="#index of getItemsByCount(passengers.infants)" [value]="index">{{index}}</option>
     </select>
-
-    <label>Pet</label>
-    <select>
-        <option>Repeat me</option>
+</div>
+<div>
+    <label>Pets</label>
+    <select (change)="onPetSelect($event.target.value)">
+        <option *ngFor="#index of getItemsByCount(passengers.pets)" [value]="pet">{{index}}</option>
     </select>
 </div>

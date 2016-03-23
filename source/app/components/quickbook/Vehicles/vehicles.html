@@ -1,6 +1,6 @@
 <div>
     <label>Vehicles</label>
-    <select>
-    <option>Repeat me</option>
+    <select (change)="onChange($event.target.value)">
+        <option *ngFor="#vehicle of vehicles" [value]="vehicle.code">{{vehicle.text}}</option>
     </select>
 </div>
