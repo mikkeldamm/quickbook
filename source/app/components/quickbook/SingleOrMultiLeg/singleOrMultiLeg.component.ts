@@ -1,7 +1,12 @@
 import {Component} from 'angular2/core';
 
 @Component ({
-   selector: 'singleOrMultiLegSelector',
-   template: '<div>This is singleOrMultiLeg</div>',
+   selector: 'singleOrMultiLeg',
+   template: `
+   <div>
+     <button>Return</button>
+     <button>One way</button>
+   </div>
+   `
 })
-export class SingleOrMultiLegComponent{}
+export class SingleOrMultiLegComponent{ }

@@ -1,7 +1,14 @@
 import {Component} from 'angular2/core';
+import {DatepickerComponent} from '../../ui/datepicker/datepicker.component';
 
 @Component ({
    selector: 'departureDate',
-   template: '<div>This is departureDate</div>',
+   template: `
+     <div>
+       <label>Departure Date</label>
+       <datepicker></datepicker>
+     </div>
+   `,
+   directives: [DatepickerComponent]
 })
-export class DepartureDateComponent{}
+export class DepartureDateComponent{ }

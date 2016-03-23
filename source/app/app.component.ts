@@ -3,8 +3,16 @@ import {QuickbookComponent} from './components/quickbook/quickbook.component';
 
 @Component ({
    selector: 'app',
-   template: '<div><h2>This is the app</h2><quickbook></quickbook></div>',
+   template: `
+     <div>
+        <quickbook></quickbook>
+     </div>
+    `,
+   styles:[`
+    h2 {
+        background-color: red;
+    }
+   `],  
    directives: [QuickbookComponent]
 })
 export class AppComponent{}
-

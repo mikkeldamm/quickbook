@@ -1,7 +1,10 @@
 import {Component} from 'angular2/core';
 
 @Component ({
-   selector: 'offerCodeComponent',
-   template: '<div>This is offerCode</div>',
+   selector: 'offerCode',
+   template: `
+     <label>Offer code</label>
+     <input type="text" />
+   `
 })
-export class OfferCodeComponent{}
+export class OfferCodeComponent{ }
