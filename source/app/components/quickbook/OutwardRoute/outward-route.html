@@ -1,6 +1,6 @@
 <div>
     <label>Outward Route</label>
-    <select>
-    <option>Repeat me</option>
+    <select (change)="onChange($event.target.value)">
+        <option *ngFor="#route of routes">{{route}}</option>
     </select>
 </div>

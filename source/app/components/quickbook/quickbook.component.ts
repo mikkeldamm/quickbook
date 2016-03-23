@@ -26,9 +26,16 @@ import {QuickbookService} from './quickbook.service';
 })
 export class QuickbookComponent{
     
+    outwardRoutes: string[] = ["Mikkel", "Thomas", "jon"];
+    
     constructor(private quickbookService: QuickbookService) {
         
         
+    }
+    
+    onOutwardRouteSelect(event) {
+        
+        console.log(event);
     }
     
     getRoutesForSelect() {

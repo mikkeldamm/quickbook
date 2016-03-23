@@ -1,7 +1,7 @@
 <h3>Quickbook</h3>
 
 <singleOrMultiLeg></singleOrMultiLeg>
-<outwardRoute></outwardRoute>
+<outwardRoute [routes]="outwardRoutes" (onSelected)="onOutwardRouteSelect($event)"></outwardRoute>
 <returnRoute></returnRoute>
 <departureDate></departureDate>
 <returnDate></returnDate>
