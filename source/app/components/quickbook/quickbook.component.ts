@@ -13,6 +13,7 @@ import {QuickbookService} from './quickbook.service';
 @Component ({
    selector: 'quickbook',
    template: require('./quickbook.html'),
+   styles: [require('./quickbook.scss')],
    directives: [SingleOrMultiLegComponent,
                 OutwardRouteComponent,
                 ReturnRouteComponent,
@@ -24,8 +25,6 @@ import {QuickbookService} from './quickbook.service';
     bindings: [QuickbookService]
 })
 export class QuickbookComponent{
-    
-    public name: string = "jon";
     
     constructor(private quickbookService: QuickbookService) {
         

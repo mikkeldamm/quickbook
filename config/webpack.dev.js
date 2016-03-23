@@ -45,6 +45,7 @@ module.exports = {
       {test: /\.ts$/, loader: 'awesome-typescript-loader', exclude: [/\.(spec|e2e)\.ts$/]},
       {test: /\.json$/, loader: 'json-loader'},
       {test: /\.css$/, loader: 'raw-loader'},
+      {test: /\.scss$/, loaders: ["raw-loader", "sass-loader"], exclude: [ /node_modules/ ] },
       {test: /\.html$/, loader: 'raw-loader', exclude: [helpers.root('source/index.html')]},
     ]
   },
