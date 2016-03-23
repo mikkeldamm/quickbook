@@ -2,11 +2,6 @@ import {Component} from 'angular2/core';
 
 @Component ({
    selector: 'singleOrMultiLeg',
-   template: `
-   <div>
-     <button>Return</button>
-     <button>One way</button>
-   </div>
-   `
+   template: require('./single-or-multi-leg.html')
 })
 export class SingleOrMultiLegComponent{ }
