@@ -1,9 +1,5 @@
-h3 {
+#quickbook {
     
-    color: red;
-    
-    &:after {
-        
-        content: " + after:mikkel";
-    }
+    background-color: #fff;
+    padding: 1em;
 }

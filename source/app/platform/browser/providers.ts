@@ -7,8 +7,7 @@ import {ROUTER_PROVIDERS, LocationStrategy, HashLocationStrategy} from 'angular2
 export const APPLICATION_PROVIDERS = [
     ...FORM_PROVIDERS,
     ...HTTP_PROVIDERS,
-    ...ROUTER_PROVIDERS,
-    provide(LocationStrategy, { useClass: HashLocationStrategy }),
+    ...ROUTER_PROVIDERS
 ];
 
 export const PROVIDERS = [
