@@ -8,13 +8,9 @@ import {PassengersComponent} from './Passengers/passengers.component';
 import {VehiclesComponent} from './Vehicles/vehicles.component';
 import {OfferCodeComponent} from './OfferCode/offerCode.component';
 
-//import template from './quickbook.html!text';
-
-
 @Component ({
    selector: 'quickbook',
-   templateUrl: '/app/components/quickbook/quickbook.html',
-   //template: require(''),
+   template: require('./quickbook.html'),
    directives: [SingleOrMultiLegComponent,
                 OutwardRouteComponent,
                 ReturnRouteComponent,
@@ -25,4 +21,8 @@ import {OfferCodeComponent} from './OfferCode/offerCode.component';
                 OfferCodeComponent]
    
 })
-export class QuickbookComponent{}
+export class QuickbookComponent{
+    
+    public name: string = "jon";
+    
+}
