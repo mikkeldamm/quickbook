@@ -2,6 +2,13 @@ import {Component} from 'angular2/core';
 
 @Component ({
    selector: 'vehicles',
-   template: '<div>This is vehicles</div>',
+   template: `
+   <div>
+     <label>Vehicles</label>
+     <select>
+       <option>Repeat me</option>
+     </select>
+   </div>
+   `
 })
-export class VehiclesComponent{}
+export class VehiclesComponent{ }
