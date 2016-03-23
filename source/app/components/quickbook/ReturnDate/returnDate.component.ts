@@ -3,12 +3,7 @@ import {DatepickerComponent} from '../../ui/datepicker/datepicker.component';
 
 @Component ({
    selector: 'returnDate',
-   template: `
-     <div>
-       <label>Return Date</label>
-       <datepicker></datepicker>
-     </div>
-   `,
+   template: require('./return-date.html'),
    directives: [DatepickerComponent]
 })
 export class ReturnDateComponent{ }

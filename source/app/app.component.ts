@@ -7,12 +7,7 @@ import {QuickbookComponent} from './components/quickbook/quickbook.component';
      <div>
         <quickbook></quickbook>
      </div>
-    `,
-   styles:[`
-    h2 {
-        background-color: red;
-    }
-   `],  
+   `, 
    directives: [QuickbookComponent]
 })
 export class AppComponent{}

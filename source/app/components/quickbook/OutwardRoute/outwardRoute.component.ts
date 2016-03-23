@@ -2,13 +2,6 @@ import {Component} from 'angular2/core';
 
 @Component ({
    selector: 'outwardRoute',
-   template: `
-   <div>
-     <label>Outward Route</label>
-     <select>
-       <option>Repeat me</option>
-     </select>
-   </div>
-   `
+   template: require('./outward-route.html')
 })
 export class OutwardRouteComponent{ }
