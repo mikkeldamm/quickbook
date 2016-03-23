@@ -8,6 +8,8 @@ import {PassengersComponent} from './Passengers/passengers.component';
 import {VehiclesComponent} from './Vehicles/vehicles.component';
 import {OfferCodeComponent} from './OfferCode/offerCode.component';
 
+import {QuickbookService} from './quickbook.service';
+
 @Component ({
    selector: 'quickbook',
    template: require('./quickbook.html'),
@@ -18,11 +20,20 @@ import {OfferCodeComponent} from './OfferCode/offerCode.component';
                 ReturnDateComponent,
                 PassengersComponent,
                 VehiclesComponent,
-                OfferCodeComponent]
-   
+                OfferCodeComponent],
+    bindings: [QuickbookService]
 })
 export class QuickbookComponent{
     
     public name: string = "jon";
     
+    constructor(private quickbookService: QuickbookService) {
+        
+        
+    }
+    
+    getRoutesForSelect() {
+        
+        let routes = this.quickbookService.getRoutes();
+    }
 }
