@@ -1,0 +1,55 @@
+#passengers {
+    
+    position: relative;
+    overflow: auto;
+    
+    label {
+        
+        display: block;
+        margin-bottom: 0.5em;
+        font-size: 0.9em;
+        color: #717171;
+    }
+    
+    select {
+        
+        width: 100%;
+        border: 1px solid #C3C3C3;
+        -webkit-appearance: none;
+        border-radius: 1px;
+        padding: 0.7em;
+        font-size: 0.9em;
+        background-color: #FDFDFD;
+        box-shadow: 1px 1px 1px -1px rgba(0,0,0,0.2);
+        
+        &:focus {
+            
+            border-color: #9EA9B1;
+            outline: none;
+        }
+    }
+    
+    #adults {
+        
+        width: 25%;
+        float: left;
+    }
+    
+    #children {
+        
+        width: 25%;
+        float: left;
+    }
+    
+    #infants {
+        
+        width: 25%;
+        float: left;
+    }
+    
+    #pets {
+        
+        width: 25%;
+        float: left;
+    }
+}

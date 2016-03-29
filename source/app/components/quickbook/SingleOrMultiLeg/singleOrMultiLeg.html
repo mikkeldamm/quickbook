@@ -1,4 +1,4 @@
-<div>
-    <button (click)="selectLegType('return')">Return</button>
-    <button (click)="selectLegType('onway')">One way</button>
+<div id="legType">
+    <button [ngClass]="{'selected':isReturnLegSelected}" (click)="selectLegType('return')">Return</button>
+    <button [ngClass]="{'selected':!isReturnLegSelected}" (click)="selectLegType('oneway')">One way</button>
 </div>

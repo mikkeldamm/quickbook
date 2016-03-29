@@ -1,4 +1,4 @@
-<div>
+<div id="vehicles">
     <label>Vehicles</label>
     <select (change)="onChange($event.target.value)">
         <option *ngFor="#vehicle of vehicles" [value]="vehicle.code">{{vehicle.text}}</option>

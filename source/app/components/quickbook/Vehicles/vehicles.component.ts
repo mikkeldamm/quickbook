@@ -3,7 +3,8 @@ import {Vehicle} from '../quickbook.models';
 
 @Component ({
    selector: 'vehicles',
-   template: require('./vehicles.html')
+   template: require('./vehicles.html'),
+    styles: [ require('./vehicles.scss') ]
 })
 export class VehiclesComponent {
     

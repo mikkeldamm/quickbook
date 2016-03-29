@@ -3,7 +3,8 @@ import {Route} from '../quickbook.models';
 
 @Component({
     selector: 'returnRoute',
-    template: require('./returnRoute.html')
+    template: require('./returnRoute.html'),
+    styles: [ require('./returnRoute.scss') ]
 })
 export class ReturnRouteComponent {
 

@@ -3,7 +3,8 @@ import {Passengers} from '../quickbook.models';
 
 @Component({
     selector: 'passengers',
-    template: require('./passengers.html')
+    template: require('./passengers.html'),
+    styles: [ require('./passengers.scss') ]
 })
 export class PassengersComponent {
     

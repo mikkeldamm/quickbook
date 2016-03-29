@@ -1,14 +1,17 @@
 <div id="quickbook">
     <singleOrMultiLeg (onChange)="onLegTypeChange($event)"></singleOrMultiLeg>
-    <outwardRoute [routes]="outwardRoutes" (onSelected)="onOutwardRouteSelect($event)"></outwardRoute>
-    <returnRoute [routes]="returnRoutes" (onSelected)="onReturnRouteSelect($event)"></returnRoute>
-    <departureDate (onSelected)="onDepartureDateSelect($event)"></departureDate>
-    <returnDate (onSelected)="onReturnDateSelect($event)"></returnDate>
-    <passengers [passengers]="passengers"
-        (onAdultSelected)="onAdultSelect($event)"
-        (onChildSelected)="onChildSelect($event)"
-        (onInfantSelected)="onInfantSelect($event)"
-        (onPetSelected)="onPetSelect($event)"></passengers>
-    <vehicles [vehicles]="vehicles" (onSelected)="onVehicleSelect($event)"></vehicles>
-    <offerCode (onChange)="onOfferCodeChange($event)"></offerCode>
+    <div class="content">
+        <outwardRoute [routes]="outwardRoutes" (onSelected)="onOutwardRouteSelect($event)"></outwardRoute>
+        <returnRoute [routes]="returnRoutes" (onSelected)="onReturnRouteSelect($event)"></returnRoute>
+        <departureDate (onSelected)="onDepartureDateSelect($event)"></departureDate>
+        <returnDate (onSelected)="onReturnDateSelect($event)"></returnDate>
+        <passengers [passengers]="passengers"
+            (onAdultSelected)="onAdultSelect($event)"
+            (onChildSelected)="onChildSelect($event)"
+            (onInfantSelected)="onInfantSelect($event)"
+            (onPetSelected)="onPetSelect($event)"></passengers>
+        <vehicles [vehicles]="vehicles" (onSelected)="onVehicleSelect($event)"></vehicles>
+        <offerCode (onChange)="onOfferCodeChange($event)"></offerCode>
+        <button>book now</button>
+    </div>
 </div>

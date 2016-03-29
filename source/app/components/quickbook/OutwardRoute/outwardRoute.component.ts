@@ -3,7 +3,8 @@ import {Route} from '../quickbook.models';
 
 @Component({
     selector: 'outwardRoute',
-    template: require('./outwardRoute.html')
+    template: require('./outwardRoute.html'),
+    styles: [ require('./outwardRoute.scss') ]
 })
 export class OutwardRouteComponent {
 

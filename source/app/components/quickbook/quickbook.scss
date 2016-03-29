@@ -1,5 +1,18 @@
 #quickbook {
     
     background-color: #fff;
-    padding: 1em;
+    
+    min-width: 340px;
+    
+    .content {
+        
+        padding: 0.5em 1.2em 1.2em 1.2em;
+    }
+    
+    returnroute {
+        
+        margin-top: 1em;
+        position: relative;
+        display: block;
+    }
 }
